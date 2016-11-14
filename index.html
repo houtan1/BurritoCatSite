@@ -5,8 +5,9 @@
 <head>
   <title>BurritoCat</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/w3.css">
-  <link rel="stylesheet" href="lib/w3-theme-deep-orange.css">
+  <link rel="stylesheet" href="lib/w3-theme-brown.css">
   <meta name="description" content="Website for BurritoCat Canada">
   <meta name="keywords" content="BurritoCat, Burrito Cat, BurritoCat.xyz,
   Android, Apps, DadVice, Dadvices, Web Development">
@@ -14,53 +15,63 @@
 </head>
 
 <body class="w3-theme" style="font-family: 'Open Sans Condensed', sans-serif;">
-  <div class="w3-container w3-theme-d1">
-    <h1 style="text-align:center">BurritoCat</h1>
-    <p style="text-align:center">We develop apps <del>and websites</del></p>
-  </div>
-  <!-- next section -->
-  <div class="w3-container w3-padding">
+  <div id="wrapperFOOTER">
 
-    <div class="w3-row">
-
-      <div class="w3-col l4">
-        <div class="w3-padding-small">
-          <div class="w3-card-4 w3-padding w3-white w3-text-theme">
-            <h2>DadVice for Android</h2>
-            <p>Android app with some helpful and some <small>not-so-helpful</small> advice.<br />
-            <em>You can download the app <a href="http://burritocat.xyz">Here</a></em></p>
-          </div>
-        </div>
+    <!-- header section -->
+    <div id="headerFOOTER">
+      <div class="w3-container w3-theme-d3">
+        <h1 style="text-align:center">BurritoCat</h1>
+        <p style="text-align:center">We develop apps <del>and websites</del></p>
       </div>
+    </div> <!-- headerFOOTER -->
 
-      <div class="w3-col l4">
-        <div class="w3-padding-small">
-          <div class="w3-card-4 w3-padding w3-white w3-text-theme">
-            <h2>BurritoCat Web Design</h2>
-            <p>How did we make this website?</p>
+    <!-- content section -->
+
+    <div id="contentFOOTER">
+      <div class="w3-container w3-padding">
+
+        <div class="w3-row">
+
+          <div class="w3-half w3-padding-small">
+            <div class="w3-card-4 w3-padding w3-white w3-text-theme">
+              <h2 class="w3-center">DadVice for Android</h2>
+              <p>Android app with some helpful and some <small>not-so-helpful</small> advice.<br />
+              <em>You can download the app <a href="http://burritocat.xyz">Here</a></em></p>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="w3-col l4">
-        <div class="w3-padding-small">
-          <div class="w3-card-4 w3-padding w3-white w3-text-theme">
-            <h2>Get in the Loop!</h2>
-            <p>Join our email list and we'll let you know when <strong>important things</strong> happen.</p>
+<!--
+          <div class="w3-col l4">
+            <div class="w3-padding-small">
+              <div class="w3-card-4 w3-padding w3-white w3-text-theme">
+                <h2>BurritoCat Web Design</h2>
+                <p>How did we make this website?</p>
+              </div>
+            </div>
           </div>
+-->
+
+          <div class="w3-half w3-padding-small">
+            <div class="w3-card-4 w3-padding w3-white w3-text-theme">
+              <h2 class="w3-center">Get in the Loop!</h2>
+              <p>Join our email list and we'll let you know when <strong>important things</strong> happen.</p>
+            </div>
+          </div>
+
         </div>
+
       </div>
+    </div> <!-- contentFOOTER -->
 
-    </div>
-
-  </div>
-
-  <div class="w3-container w3-theme-d5">
-    <footer>
-      <p> Copyright BurritoCat. Made with Love in Canada. Contact us.</p>
-    </footer>
-  </div>
-
+    <!-- footer section -->
+    <div id="footerFOOTER">
+      <div class="w3-container w3-theme-d3 w3-center" style="height:75px;">
+        <footer>
+          <p> Copyright &copy; BurritoCat <script type="text/javascript">document.write(new Date().getFullYear());</script>.
+            <br>Made with &hearts; in Canada</p>
+        </footer>
+      </div>
+    </div> <!-- footerFOOTER -->
+  </div> <!-- wrapperFOOTER -->
 </body>
 
 </html>
@@ -73,10 +84,22 @@ Problems to solve: not enough page content to fill 1 desktop view, therefore foo
 when footer is forced to the bottom, and the page is resized (mobile view) the footer sticks, and does not
 float to the bottom where it belongs...
 
+hint: detect size of screen and place footer appropriately
+DONE
+
 todo: theme update/tweak
+DONE
 todo: navigation?
+NO NEED, 1 page
 todo: content
+Get rid of the middle (BurritoCat Web Design) and make the other two cards "half"
+DONE
 todo: copyright symbol and other emoji
-todo: email signup list
-todo: corporate email
+DONE
+todo: change favicon
+todo: Make content better and size larger and text color better
+todo: integrate (contact us)
+todo: email signup list MAILCHIMP? how does it all work? captcha?
+todo: corporate email how to host, cost? heyLoomo maybe just gmail to start with
+
 -->

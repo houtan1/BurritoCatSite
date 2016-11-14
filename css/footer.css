@@ -1,0 +1,29 @@
+/* reference: http://cssreset.com/how-to-keep-footer-at-bottom-of-page-with-css/ */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapperFOOTER {
+  min-height: 100%;
+  position: relative;
+}
+
+#headerFOOTER {
+}
+
+#contentFOOTER {
+  /* ~ height of the footer element */
+  padding-bottom: 75px;
+}
+
+#footerFOOTER {
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

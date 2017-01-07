@@ -110,6 +110,11 @@ body, html {
   <p class="w3-center w3-large">Lets get in touch.<br><i class="fa fa-envelope"></i>
     <a href="mailto:hello@burritocat.xyz" target="_top">hello@burritocat.xyz</a>
   </p>
+  <p class="w3-center">
+    <button class="w3-btn w3-padding" id="open-popup">
+      <i class="fa fa-paper-plane"></i> SUBSCRIBE
+    </button>
+  </p>
 </div>
 
 <!-- Footer -->
@@ -122,6 +127,7 @@ body, html {
       Creative Commons 3.0 Attribution License.</i></p>
 </footer>
 
+<!-- sidenav menu sliding action -->
 <script>
 // Toggle between showing and hiding the sidenav when clicking the menu icon
 var mySidenav = document.getElementById("mySidenav");
@@ -139,6 +145,8 @@ function w3_close() {
     mySidenav.style.display = "none";
 }
 </script>
+
+<!-- Google Analytics Code -->
 <script>
 // Google Analytics Website Tracking Code
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -148,7 +156,16 @@ function w3_close() {
 
   ga('create', 'UA-89199923-1', 'auto');
   ga('send', 'pageview');
+</script>
 
+<!-- MailChimp Subscription Pop-Up (modified via https://gist.github.com/scottmagdalein/259d878ad46ed6f2cdce)-->
+<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+<script type="text/javascript">
+function showMailingPopUp() {
+  require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us14.list-manage.com","uuid":"1cfbd7fc979def140a106fc55","lid":"02c8e9ecb8"}) })
+  document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+};
+document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
 </script>
 
 </body>
